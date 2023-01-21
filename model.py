@@ -33,5 +33,10 @@ class UserModel:
         try:
             if self.__connection is None:
                 self.connect()
-            query = "insert into "
-
+            query = "insert into user(name,email,password) values (%s,%s,%s)"
+            args = (user.name,user.email,user.password)
+            self.__cursor.execute(query,args)
+            self.__connection.commit()
+            return True
+        except Exception as e:
+            print(str(e))
