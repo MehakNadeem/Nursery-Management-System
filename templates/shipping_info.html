@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shipping Information</title>
+    <style>
+    *{
+        font-family: Garamond;
+    }
+    body{
+        background-color: #cad2c5;
+    }
+    .info-form{
+        width:60%;
+        background-color: #cad2c5;
+    }
+    .products{
+        width: 35%;
+        background-color:darkseagreen;
+        
+    }
+    .row1, .row2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #ship-head {
+        font-size:20px;
+        
+    }
+    #info-vs {
+        border-radius: 15px;
+        border: 1px solid grey;
+        padding: 10px;
+        width: 113px;
+        height: 45px;
+        font-size: 18px;
+        
+    }
+    .info-l {
+        border-radius: 15px;
+        border: 1px solid grey;
+        padding: 10px;
+        width: 350px;
+        height: 45px;
+        font-size: 20px;
+       
+    }
+    #button {
+        width: 550px;
+        height: 50px;
+        background-color: black;
+        color:floralwhite;
+        border-radius: 10px;
+        border:1px solid darkolivegreen;
+        padding: 10px;
+        font-size: 18px;  
+    }
+    #button:hover{
+        background-color: darkolivegreen;
+    }
+    #st {
+        font-size:20px;
+        text-shadow: 2px 2px 3px #0d550d;
+    }
+    span{
+        float:right;
+        color: grey;
+    }
+    a {
+        color:black;
+        text-decoration:none;
+    }
+    a:hover {
+        color: olive;
+       
+    }
+    </style>
+
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-dark"style="background-color: rgb(33, 48, 8);">
+        <a class="navbar-brand" href="./index.html" style="padding-left:15px; font-family: Lucida Handwriting">Blossoms & Berries</a>
+    </nav>
+    
+
+    <div class="container my-4">
+        <div class="row1">
+            <div class="info-form">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="./cart.html">Cart</a></li>
+                      <li class="breadcrumb-item active"  aria-current="page">Shipping Info</li>
+                      <li class="breadcrumb-item">Confirmation</li>
+                    </ol>
+                  </nav>
+                <br />
+                <form action="" method="post">
+                    <div class="row2">
+                        <div class="ship-data">
+                            <p id="ship-head">Shipping Information :</p>
+                            <input class="info-l" type="text" placeholder="First name" name="fname" required /><br /><br>
+                            <input class="info-l" type="text" placeholder="Last name" name="lname" /><br /><br />
+                            <input class="info-l" type="email" placeholder="Email" name="email" /><br /><br />
+                            <input class="info-l" type="text" placeholder="Phone no." name="phone" required /><br /><br />
+                            <input class="info-l" type="text" placeholder="Shipping Address" name="address" required /><br /><br />
+                            <input id="info-vs" type="text" placeholder="City" name="city" required />
+                            <input id="info-vs" type="text" placeholder="Province" name="province" required />
+                            <input id="info-vs" type="text" placeholder="Zip Code" name="zip" required /><br />
+                            <br />
+                            <label>Payment Method: </label>
+                            <input type="radio" id="COD" name="payment method" value="Cash On Delivery">
+                            <label for="COD">Cash On Delivery</label>
+                            <input type="radio" id="card"  name="payment method" value="Card Payment">
+                            <label for="card">Payment by Card</label>
+                        </div>
+                        <div id="card-info" style="display: none;">
+                            <p id="ship-head">Card Information: </p>
+                            <input class="info-l" id="cardno" type="text"   placeholder="Card Number" name="accno" required="true" /><br /><br>
+                            <input class="info-l" id="cardname" type="text"  placeholder="Cardholder name" name="nameoc" required="true" /><br /><br>
+                            <input class="info-l" id="carddate" type="month"  placeholder="Card Expiry" name="expiry" required="true"><br><br> 
+                            
+                            <p>Accepted cards: </p>
+                            <i class="fa fa-cc-visa" style="color:navy; font-size: 30px;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:rgb(86, 154, 162); font-size: 30px;"></i>
+                            <i class="fa fa-credit-card" style="color:rgb(205, 110, 10); font-size: 30px;"></i>
+                            
+                        </div>
+                        <input id="button" type="submit" value="Confirm Order" name="submit" />
+                    </div>
+                </form>
+                <p><a href="./cart.html"> <strong>  Return to Cart </strong></a></p>
+            </div>
+            <div class=" products">
+                <p id="st">Products in Cart</p><br />
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn1=document.getElementById("card");
+        const btn2=document.getElementById("COD");
+
+        btn1.addEventListener('click',cardinfo);
+        btn2.addEventListener('click',cardinfo);
+
+        function cardinfo(){
+            content=document.getElementById("card-info")
+
+            if(document.getElementById("card").checked){
+                content.style.display='block';
+                document.getElementById("cardno").setAttribute("required",true);   
+                document.getElementById("cardname").setAttribute("required",true);   
+                document.getElementById("carddate").setAttribute("required",true);                    
+            }
+            else if(document.getElementById("COD").checked){
+                content.style.display='none';
+                document.getElementById("cardno").removeAttribute("required");
+                document.getElementById("cardname").removeAttribute("required");
+                document.getElementById("carddate").removeAttribute("required");
+            }
+        }
+        
+    </script>
+
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(33, 48, 8);">
+    © 2023 Copyright
+    <!--<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!--Footer End-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="./public/js/bootstrap.js"></script>
+</body>
+</html>
