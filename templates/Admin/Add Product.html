@@ -90,7 +90,7 @@
                         <h1 class="text-center">Add Product</h1>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form action="/addProduct" method="POST" enctype="multipart/form-data">
                             <div class="form-row" style="display: flex;">
                                 <div class="form-group col-md-5">
                                     <label for="prodName">Product Name</label>
@@ -128,7 +128,7 @@
                                 </div>
                                 <div class="form-group col-md-5 mx-5">
                                     <label for="ProdDescription">Product Description</label>
-                                    <input type="text" class="form-control my-2" id="ProdDescription" name="ProductDescription"  required>
+                                    <textarea class="form-control my-2" id="ProdDescription" name="ProductDescription"></textarea>
                                 </div>
 
                             </div>
@@ -136,6 +136,7 @@
                             <button type="submit" class="btn btn-dark btn-lg my-4 py-2 px-4" style="margin-left: 37%;">Add Product</button>
                         </form>
                     </div>
+                    {{ msg }}
             </div>
         </div>
     </div>

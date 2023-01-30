@@ -30,6 +30,9 @@ class Product:
         self.description = description
         self.image = image
 
+    def print(self):
+        print(self.name,self.price,self.quantity,self.color,self.category,self.subcategory,self.description,self.image)
+
 class Order:
     """order class"""
     def __init__(self,date='',status='',amount=0.00):
