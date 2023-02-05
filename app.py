@@ -10,9 +10,11 @@ UPLOAD_FOLDER = 'static/images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-@app.route('/')
-def hello():
-    return "Hello!!"
+
+
+@app.route('/home')
+def Home():
+    return render_template("index.html")
 
 @app.route('/addProduct', methods = ["GET","POST"])
 def addProduct():
