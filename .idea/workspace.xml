@@ -4,9 +4,143 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d51d33-263a-47df-92b6-a86ddf679ffb" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="84d51d33-263a-47df-92b6-a86ddf679ffb" name="Changes" comment="first demo commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/Add Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/Add Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/adminhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/adminhome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/external/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/m plants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/plants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/product/plant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/product/plants/RoseFlower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/purple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/signup.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/image/sunflower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/public/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/UpdateProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UpdateProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accountinfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fertilizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fertilizer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/external/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/m plants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/plants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/product/plant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/product/plants/RoseFlower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/purple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/signup.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/sunflower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/seed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/seed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shipping_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shipping_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/singleProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/singleProduct.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674329686406</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first demo commit">
+      <created>1675590380932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675590380932</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +298,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="first demo commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first demo commit" />
   </component>
 </project>

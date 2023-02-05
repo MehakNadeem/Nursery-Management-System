@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
@@ -15,8 +17,8 @@
       .container{
           width: 50%;
           margin-top: 40px;
-          background-color: #cad2c5;
           border-radius: 20px;
+          background-color: white;
       }
       .header{
           padding-top: 20px;
@@ -70,12 +72,12 @@
           margin-left: 20%;
           margin-bottom: 10px;
       }
-      
-      
-      
+
+
+
   </style>
   </head>
-  <body>
+  <body style="background-color: #cad2c5;">
     <header>
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark"style="background-color: rgb(33, 48, 8);">
@@ -94,12 +96,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link " aria-current="page" href="./index.html">Home</a>
-              <a class="nav-link" href="./signup.html">Register</a>
-              <a class="nav-link active" href="./login.html">Login</a>
-              <a class="nav-link" href="./About.html">About</a>
-              <a class="nav-link" href="./cart.html">View Cart</a>
-              <a class="nav-link" href="./accountinfo.html">Profile</a>
+                        <a class="nav-link active" aria-current="page" href="./home">Home</a>
+                        <a class="nav-link" href="./signup">Register</a>
+                        <a class="nav-link" href="./login">Login</a>
+                        <a class="nav-link" href="./About">About</a>
+                        <a class="nav-link" href="./cart">View Cart</a>
+                        <a class="nav-link" href="./accountinfo">Profile</a>
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@
 <div class = "container">
       <form action="#" name="loginform" method="post" onsubmit="return validateform()">
           <div class="header">
-              <h2><strong>LogIn To Your Account</strong></h2>
+              <img src="public/image/B&Blogo.png" style="width:150px;height: 150px">
           </div>
           <div class="row">
             <input class="emailfield" name="email" type="email" placeholder="Email Address" required>
@@ -124,19 +126,19 @@
               <p id="password"></p>
           </div>
           <div class="row">
-              <input class="submitbtn" name="submit" type="submit" value="LOG IN"> 
+              <input class="submitbtn" name="submit" type="submit" value="LOG IN">
             </div>
                 </form>
                   <strong><hr></strong>
                 <div class="row">
-                      <h6>New Customer?    <a href="./signup.html">CREATE YOUR ACCOUNT</a></h6>
+                      <h6>New Customer?    <a href="./signup">CREATE YOUR ACCOUNT</a></h6>
                 </div>
     </div>
 
   <!-- body end -->
 
   <!--Footer Start-->
-  <footer class="bg-light text-center text-white my-4">
+  <footer class="text-center text-white my-4" style="background-color: #cad2c5;">
     <!-- Grid container -->
     <div class="p-4 pb-0">
       <!-- Section: Social media -->
@@ -149,7 +151,7 @@
           role="button"
           ><i class="fab fa-facebook-f"></i
         ></a>
-  
+
         <!-- Twitter -->
         <a
           class="btn text-white btn-floating m-1"
@@ -158,7 +160,7 @@
           role="button"
           ><i class="fab fa-twitter"></i
         ></a>
-  
+
         <!-- Google -->
         <a
           class="btn text-white btn-floating m-1"
@@ -167,7 +169,7 @@
           role="button"
           ><i class="fab fa-google"></i
         ></a>
-  
+
         <!-- Instagram -->
         <a
           class="btn text-white btn-floating m-1"
@@ -176,7 +178,7 @@
           role="button"
           ><i class="fab fa-instagram"></i
         ></a>
-  
+
         <!-- Linkedin -->
         <a
           class="btn text-white btn-floating m-1"
@@ -197,7 +199,7 @@
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgb(33, 48, 8);">
       © 2023 Copyright
@@ -215,13 +217,13 @@
       {
           var email = document.loginform.email.value;
           var psw = document.loginform.password.value;
-          if (email==null || email==""){  
-              document.getElementById("demo").innerHTML="*Enter valid email address" 
-              return false;  
-          }else if(psw.length<8){  
+          if (email==null || email==""){
+              document.getElementById("demo").innerHTML="*Enter valid email address"
+              return false;
+          }else if(psw.length<8){
               document.getElementById("password").innerHTML="*Password must be 8+ characters long. "
-              return false;  
-          }  
+              return false;
+          }
       }
   </script>
   </body>

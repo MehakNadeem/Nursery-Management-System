@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/bootstrap.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,11 +30,11 @@
         flex-wrap: wrap;
     }
     
-    #ship-head {
+    .ship-head {
         font-size:20px;
         
     }
-    #info-vs {
+    .info-vs {
         border-radius: 15px;
         border: 1px solid grey;
         padding: 10px;
@@ -86,7 +86,7 @@
 </head>
 
 <body id="body">
-    <nav class="navbar navbar-expand-lg navbar-dark"style="background-color: rgb(33, 48, 8);">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(33, 48, 8);">
         <a class="navbar-brand" href="./index.html" style="padding-left:15px; font-family: Lucida Handwriting">Blossoms & Berries</a>
     </nav>
     
@@ -96,7 +96,7 @@
             <div class="info-form">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="./cart.html">Cart</a></li>
+                      <li class="breadcrumb-item"><a href="./cart">Cart</a></li>
                       <li class="breadcrumb-item active"  aria-current="page">Shipping Info</li>
                       <li class="breadcrumb-item">Confirmation</li>
                     </ol>
@@ -105,15 +105,15 @@
                 <form action="" method="post">
                     <div class="row2">
                         <div class="ship-data">
-                            <p id="ship-head">Shipping Information :</p>
+                            <p class="ship-head">Shipping Information :</p>
                             <input class="info-l" type="text" placeholder="First name" name="fname" required /><br /><br>
                             <input class="info-l" type="text" placeholder="Last name" name="lname" /><br /><br />
                             <input class="info-l" type="email" placeholder="Email" name="email" /><br /><br />
                             <input class="info-l" type="text" placeholder="Phone no." name="phone" required /><br /><br />
                             <input class="info-l" type="text" placeholder="Shipping Address" name="address" required /><br /><br />
-                            <input id="info-vs" type="text" placeholder="City" name="city" required />
-                            <input id="info-vs" type="text" placeholder="Province" name="province" required />
-                            <input id="info-vs" type="text" placeholder="Zip Code" name="zip" required /><br />
+                            <input class="info-vs" type="text" placeholder="City" name="city" required />
+                            <input class="info-vs" type="text" placeholder="Province" name="province" required />
+                            <input class="info-vs" type="text" placeholder="Zip Code" name="zip" required /><br />
                             <br />
                             <label>Payment Method: </label>
                             <input type="radio" id="COD" name="payment method" value="Cash On Delivery">
@@ -123,9 +123,9 @@
                         </div>
                         <div id="card-info" style="display: none;">
                             <p id="ship-head">Card Information: </p>
-                            <input class="info-l" id="cardno" type="text"   placeholder="Card Number" name="accno" required="true" /><br /><br>
-                            <input class="info-l" id="cardname" type="text"  placeholder="Cardholder name" name="nameoc" required="true" /><br /><br>
-                            <input class="info-l" id="carddate" type="month"  placeholder="Card Expiry" name="expiry" required="true"><br><br> 
+                            <input class="info-l" id="cardno" type="text"   placeholder="Card Number" name="accno" required /><br /><br>
+                            <input class="info-l" id="cardname" type="text"  placeholder="Cardholder name" name="nameoc" required /><br /><br>
+                            <input class="info-l" id="carddate" type="month"  placeholder="Card Expiry" name="expiry" required><br><br>
                             
                             <p>Accepted cards: </p>
                             <i class="fa fa-cc-visa" style="color:navy; font-size: 30px;"></i>
@@ -136,7 +136,7 @@
                         <input id="button" type="submit" value="Confirm Order" name="submit" />
                     </div>
                 </form>
-                <p><a href="./cart.html"> <strong>  Return to Cart </strong></a></p>
+                <p><a href="./cart"> <strong>  Return to Cart </strong></a></p>
             </div>
             <div class=" products">
                 <p id="st">Products in Cart</p><br />
