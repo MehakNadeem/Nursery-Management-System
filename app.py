@@ -1,21 +1,19 @@
-from flask import Flask, request, render_template, jsonify, json, make_response, send_file
-from db_classes import *
+from flask import Flask, request, render_template
 from model import *
 #from templates.Admin.public import *
 import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'static/product images'
+UPLOAD_FOLDER = 'static/product_images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-
-
-
-
 @app.route('/home')
-def Home():
-    return render_template("index.html")
+def home():
+    db = ProductModel()
+    product_list = db.getHomeProducts()
+    if product_list is not None:
+        return render_template("index.html", products=product_list)
 
 
 @app.route('/signup')
@@ -82,6 +80,164 @@ def productsReport():
     product_list = db.getProducts()
     if product_list is not None:
         return render_template("Admin/Product_listing.html", products = product_list)
+
+
+@app.route('/fruits')
+def seed_fruits():
+    """route to show seeds"""
+    category = "seeds"
+    subcategory = "fruits"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("seed.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("seed.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route('/flowers')
+def seed_flowers():
+    category = "seeds"
+    subcategory = "flowers"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("seed.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("seed.html", msg="No Available Item in this list",  name=subcategory)
+
+
+@app.route('/vegetables')
+def seed_vegetables():
+    """route to show seeds"""
+    category = "seeds"
+    subcategory = "vegetables"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("seed.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("seed.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route('/indoor_plants')
+def seed_indoor_plants():
+    """route to show seeds"""
+    category = "seeds"
+    subcategory = "indoor plants"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("seed.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("seed.html", msg="No Available Item in this list", name=subcategory)
+
+
+
+@app.route('/Nfertilizer')
+def show_n_fertilizer():
+    """route to show fertilizers"""
+    db = ProductModel()
+    name = "fertilizers"
+    subcategory = "nitrogen"
+    fertilizer_list = db.get_categories_data(name, subcategory)
+    if fertilizer_list:
+        return render_template("fertilizer.html", fertilizers=fertilizer_list, fertilizerName=subcategory)
+    else:
+        return render_template("fertilizer.html", msg="No Available Item in this list", fertilizerName=subcategory)
+
+@app.route('/PHfertilizer')
+def show_ph_fertilizer():
+    """route to show fertilizers"""
+    name = "fertilizers"
+    subcategory = "phosphorus"
+    db = ProductModel()
+    fertilizer_list = db.get_categories_data(name, subcategory)
+    if fertilizer_list:
+        return render_template("fertilizer.html", fertilizers=fertilizer_list, fertilizerName=subcategory)
+    else:
+        return render_template("fertilizer.html", msg="No Available Item in this list", fertilizerName=subcategory)
+
+
+
+@app.route('/Pfertilizer')
+def show_pf_fertilizer():
+    """route to show fertilizers"""
+    name = "fertilizers"
+    subcategory = "potassium"
+    db = ProductModel()
+    fertilizer_list = db.get_categories_data(name, subcategory)
+    if fertilizer_list:
+        return render_template("fertilizer.html", fertilizers=fertilizer_list, fertilizerName=subcategory)
+    else:
+        return render_template("fertilizer.html", msg="No Available Item in this list", fertilizerName=subcategory)
+
+
+
+@app.route('/flowering')
+def flowering_plants():
+    """route to show plants"""
+    category = "plants"
+    subcategory = "flowering plants"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("plant.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("plant.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route('/non-flowering')
+def non_flowering_plants():
+    """route to show plants"""
+    category = "plants"
+    subcategory = "non flowering plants"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("plant.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("plant.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route('/climber')
+def climber_plants():
+    """route to show plants"""
+    category = "plants"
+    subcategory = "climbing plants"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("plant.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("plant.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route('/creeper')
+def creeper_plants():
+    """route to show plants"""
+    category = "plants"
+    subcategory = "creepers"
+    db = ProductModel()
+    product_list = db.get_categories_data(category, subcategory)
+    if product_list:
+        return render_template("plant.html",  products=product_list,  name=subcategory)
+    else:
+        return render_template("plant.html", msg="No Available Item in this list", name=subcategory)
+
+
+@app.route("/single_product", methods=["GET", "POST"])
+def single_product():
+    if request.method == "POST":
+        id_ = int(request.form['product_id'])
+        db = ProductModel()
+        product_data = db.get_single_product_detail(id_)
+        return render_template("singleProduct.html", product=product_data)
+    else:
+        return render_template("singleProduct.html")
+
+
+
 
 if __name__ == '__main__':
     app.run()

@@ -2,14 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/bootstrap.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <title>Fertilizers</title>
 </head>
 <style>
@@ -31,12 +42,12 @@
           </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="./home">Home</a>
-                        <a class="nav-link" href="./signup">Register</a>
-                        <a class="nav-link" href="./login">Login</a>
-                        <a class="nav-link" href="./About">About</a>
-                        <a class="nav-link" href="./cart">View Cart</a>
-                        <a class="nav-link" href="./accountinfo">Profile</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="./signup.html">Register</a>
+                        <a class="nav-link" href="./login.html">Login</a>
+                        <a class="nav-link" href="./About.html">About</a>
+                        <a class="nav-link" href="./cart.html">View Cart</a>
+                        <a class="nav-link" href="./accountinfo.html">Profile</a>
                     </div>
                 </div>
             </div>
@@ -55,10 +66,10 @@
                                     Plants
                                 </a>
                                 <ul class="dropdown-menu" style = "background-color: #E6E5A3;">
-                                    <li><a href="./plant.html" class="dropdown-item" style="color: black;">Flowering</a></li>
-                                    <li><a href="./plant.html" class="dropdown-item" style="color:  black">Non-Flowering</a></li>
-                                    <li><a href="./plant.html" class="dropdown-item" style="color:  black">Creeper</a></li>
-                                    <li><a href="./plant.html" class="dropdown-item" style="color:  black">Climbers</a></li>
+                                    <li><a href="./flowering" class="dropdown-item" style="color: black;">Flowering</a></li>
+                                    <li><a href="./non-flowering" class="dropdown-item" style="color: black; ">Non-Flowering</a></li>
+                                    <li><a href="./creeper" class="dropdown-item" style="color: black; ">Creepers</a></li>
+                                    <li><a href="./climber" class="dropdown-item" style="color: black; ">Climbers</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -69,10 +80,10 @@
                                     Seeds
                                    </a>
                                    <ul class="dropdown-menu" style = "background-color: #E6E5A3;">
-                                       <li><a href="./seed.html" class="dropdown-item" style="color: Black;">Fruits</a></li>
-                                       <li><a href="./seed.html" class="dropdown-item" style="color: Black;">Flowers</a></li>
-                                       <li><a href="./seed.html"  class="dropdown-item" style="color: Black;">Vegetables</a></li>
-                                       <li><a href="./seed.html"  class="dropdown-item" style="color: Black;">Indoor Plants</a></li>
+                                       <li><a href="./fruits" class="dropdown-item" style="color: Black;">Fruits</a></li>
+                                       <li><a href="./flowers" class="dropdown-item" style="color: Black;">Flowers</a></li>
+                                       <li><a href="./vegetables"  class="dropdown-item" style="color: Black;">Vegetables</a></li>
+                                       <li><a href="./indoor_plants"  class="dropdown-item" style="color: Black;">Indoor Plants</a></li>
                                    </ul>
                             </div>
                         </li>
@@ -82,169 +93,43 @@
                                     Fertilizers
                                     </a>
                                     <ul class="dropdown-menu" style = "background-color: #E6E5A3;">
-                                        <li><a href="fertilizer.html" class="dropdown-item" style="color: Black;">Nitrogen</a></li>
-                                        <li><a href="fertilizer.html"  class="dropdown-item" style="color: Black; ">Phosphorus</a></li>
-                                        <li><a href="fertilizer.html"  class="dropdown-item" style="color: Black;" >Potassium</a></li>
+                                        <li><a href="/Nfertilizer" class="dropdown-item"  style="color: Black;">Nitrogen</a></li>
+                                        <li><a href="/PHfertilizer"  class="dropdown-item" style="color: Black; ">Phosphorus</a></li>
+                                        <li><a href="/Pfertilizer"  class="dropdown-item"  style="color: Black;" >Potassium</a></li>
                                     </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-10">
-                    <h1 class="text-white" style="text-align: center;background-color: darkolivegreen;">Fertilizer Products</h1>
+                    <h1 class="text-white" style="text-align: center;background-color: darkolivegreen;">{{ fertilizerName }} Fertilizer</h1>
+                         <h3>{{msg}}</h3>
                     <div class="row my-4">
-                        <div class="col-md-3">
-                            <div class="card" style="background-color: #cad2c5; ">
-                                <img src="./public/image/sunflower.jpg" alt="Denim Jeans" style="width:100%">
-                                <h2 class="text-center">Dummy Plants</h2>
-                                <p class="price mx-3">$19.99</p>
-                                <p class="mx-3">Some text about the Plants..</p>
-                                <p class="text-center">
-                                    <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                    <a href="./singleProduct.html" class="text-center btn btn-dark">View Detail</a>
-                                </p>
+                        {% for fertilizer in fertilizers %}
+                            <div class="col-md-4">
+                                <div class="card" style="background-color: #cad2c5;margin-top: 40px;height: 400px">
+                                    <img src="{{ url_for('static', filename='product_images/' + fertilizer.image) }}" alt="fertilizer" style="width:100%;height: 200px">
+                                    <h3 class="text-center">{{ fertilizer.name }}</h3>
+                                    <h3 class="text-center price mx-3">Rs.{{ fertilizer.price }}</h3>
+
+                                    <div class = "input-group my-3">
+                                            <form action="/cart" method="post">
+                                                <input type="hidden" name="product_id" value="{{ fertilizer.id }}">
+                                                <input type = "submit"  class=" btn btn-dark text-center mx-4" name = "Add to Cart" value = "Add to Cart">
+                                            </form>
+                                             <form action="/single_product" method="post">
+                                                <input type="hidden" name="product_id" value="{{ fertilizer.id }}">
+                                                 <input type = "submit"  class="text-center btn btn-dark " name = "View Detail" value = "View Detail">
+                                             </form>
+                                    </div>
+                                </div>
                             </div>
+                        {% endfor %}
                         </div>
-                        <div class="col-md-3">
-                            <div class="card" style="background-color: #cad2c5;">
-                                <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                <h2 class="text-center">Dummy Plants</h2>
-                                <p class="price mx-3">$19.99</p>
-                                <p class="mx-3">Some text about the Plants..</p>
-                                <p class="text-center">
-                                    <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                    <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="background-color: #cad2c5;">
-                                <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                <h2 class="text-center">Dummy Plants</h2>
-                                <p class="price mx-3">$19.99</p>
-                                <p class="mx-3">Some text about the Plants..</p>
-                                <p class="text-center">
-                                    <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                    <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="background-color: #cad2c5;">
-                                <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                <h2 class="text-center">Dummy Plants</h2>
-                                <p class="price mx-3">$19.99</p>
-                                <p class="mx-3">Some text about the Plants..</p>
-                                <p class="text-center">
-                                    <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                    <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row my-4">
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Seeds</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Seeds..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Seeds</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Seeds..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Seeds</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Seeds..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Seeds</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Seeds..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row my-4">
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/sunflower.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Fertilizer</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Fertilizer..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Fertilizer</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Fertilizer..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Fertilizer</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Fertilizer..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="background-color: #cad2c5;">
-                                    <img src="./public/image/product/plant.jpg" alt="Denim Jeans" style="width:100%">
-                                    <h2 class="text-center">Dummy Fertilizer</h2>
-                                    <p class="price mx-3">$19.99</p>
-                                    <p class="mx-3">Some text about the Fertilizer..</p>
-                                    <p class="text-center">
-                                        <a href="#" class="text-center btn btn-dark">Add to Cart</a>
-                                        <a href="#" class="text-center btn btn-dark">View Detail</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>    
+            </div>
         </div>
+    </body>
 
     <!--Footer Start-->
     <footer class="bg-light text-center text-white">
@@ -290,6 +175,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    </body>
+</body>
 
 </html>
