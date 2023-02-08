@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d51d33-263a-47df-92b6-a86ddf679ffb" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/flaskProject8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskProject8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="84d51d33-263a-47df-92b6-a86ddf679ffb" name="Changes" comment="Nursery-Management">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Admin/Add Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/Add Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/adminhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/adminhome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/UpdateProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UpdateProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accountinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accountinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fertilizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fertilizer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public/image/edit.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,6 +58,17 @@
         <option name="url" value="https://github.com/MehakNadeem/NurseryManagementSystem.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/db_classes.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/model.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/Admin/Add Product.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/Admin/Product_listing.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/Admin/adminhome.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/accountinfo.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/fertilizer.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/index.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,6 +130,34 @@
       <workItem from="1674888830317" duration="17114000" />
       <workItem from="1675000182399" duration="2150000" />
       <workItem from="1675002637931" duration="850000" />
+      <workItem from="1675096998919" duration="134000" />
+      <workItem from="1675186560902" duration="538000" />
+      <workItem from="1675234181084" duration="6967000" />
+      <workItem from="1675252721324" duration="5229000" />
+      <workItem from="1675263930083" duration="594000" />
+      <workItem from="1675409273075" duration="1978000" />
+      <workItem from="1675413698426" duration="12637000" />
+      <workItem from="1675434983176" duration="1256000" />
+      <workItem from="1675445841426" duration="5904000" />
+      <workItem from="1675496440567" duration="506000" />
+      <workItem from="1675497160985" duration="5970000" />
+      <workItem from="1675531885611" duration="6449000" />
+      <workItem from="1675600632813" duration="39000" />
+      <workItem from="1675600892666" duration="780000" />
+      <workItem from="1675684233467" duration="205000" />
+      <workItem from="1675748560327" duration="2770000" />
+      <workItem from="1675755307207" duration="9000" />
+      <workItem from="1675763999910" duration="3872000" />
+      <workItem from="1675769045482" duration="2364000" />
+      <workItem from="1675771447086" duration="191000" />
+      <workItem from="1675777363013" duration="1560000" />
+      <workItem from="1675778950462" duration="4244000" />
+      <workItem from="1675786671584" duration="3223000" />
+      <workItem from="1675790599368" duration="551000" />
+      <workItem from="1675791189292" duration="975000" />
+      <workItem from="1675857011374" duration="896000" />
+      <workItem from="1675857939018" duration="2962000" />
+      <workItem from="1675860934216" duration="2710000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1674329686406</created>
@@ -122,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674329686406</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nursery-Management">
+      <created>1675097049177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675097049177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,10 +192,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Nursery-Management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nursery-Management" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flaskProject8$model.coverage" NAME="model Coverage Results" MODIFIED="1674909083487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flaskProject8$flaskProject8.coverage" NAME="flaskProject8 Coverage Results" MODIFIED="1675003355752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskProject8$model.coverage" NAME="model Coverage Results" MODIFIED="1675821177871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flaskProject8$flaskProject8.coverage" NAME="flaskProject8 Coverage Results" MODIFIED="1675864079493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskProject8$db_classes.coverage" NAME="db_classes Coverage Results" MODIFIED="1675420609277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flaskProject8$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1675432731313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
